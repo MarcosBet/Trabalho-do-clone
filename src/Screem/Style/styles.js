@@ -97,14 +97,50 @@ fontSize:40,
 color:'black',
 fontWeight:'bold'
 },
+bacgroungLogin:
+{
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor: '#20e582'
 
-
-
-
-
-
-
-
-
+},
+containerLogo:
+{
+    flex:1,
+    justifyContent:'center'
+},
+containeLogin:
+{   
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center',
+    width:'90%'
+},
+inputLogo:
+{
+    fontSize:17,
+    width:'90%',
+    marginBottom:15,
+    backgroundColor:'#A1F4CA',
+    color:'black',
+   fontWeight:'bold',
+    padding:10,
+},
+btnLogin:
+{
+backgroundColor:'#0693e3',
+width:'90%',
+height:45,
+alignItems:'center',
+justifyContent:'center',
+borderRadius:7,
+},
+btnLoginText:
+{
+fontSize:18,
+color:'black',
+fontWeight:'bold',
+}
 
 })

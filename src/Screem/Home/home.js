@@ -17,9 +17,10 @@ import Post from './post';
 
 
 
-export default Home =()=>{
+export default function Home() {
 
     const post = [
+
         {
             id:'1',
             author: 'marcos.bet',
