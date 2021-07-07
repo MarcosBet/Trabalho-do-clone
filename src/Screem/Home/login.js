@@ -1,15 +1,18 @@
 import * as React from 'react';
-import {View , Text, KeyboardAvoidingView , Image , TextInput, TouchableOpacity, Alert} from 'react-native';
+import {View ,useState, Text, KeyboardAvoidingView , Image , TextInput, TouchableOpacity, Alert} from 'react-native';
 import styles from '../Style/styles';
-import { Entypo } from '@expo/vector-icons';
+import { Entypo ,AntDesign} from '@expo/vector-icons';
 import Home from './home';
+//import { WebView } from 'react-native-webview';
 
 
-export default function Instagram({ navigation}){
+
+export default function Login({ navigation}){
     const Acessar=() =>{
         navigation.navigate('Home');
+       
         }
-
+        //const [url , setUrl]= useState('https://github.com/MarcosBet/Trabalho-do-clone')
 
     return (
 
@@ -18,13 +21,23 @@ export default function Instagram({ navigation}){
             <View style={styles.containerLogo}>
                 <View>
                    
-                 <TouchableOpacity
-                
-                 >
-                  <Entypo name="instagram" size={40} color="black" />
+                 <TouchableOpacity>
+                  <Entypo name="instagram" size={60} color="black" />
                  </TouchableOpacity>
                 </View>
-                 
+               
+                   <View>
+                   <TouchableOpacity 
+                   //onPress={{uri: url}}
+                   >
+                   <AntDesign name="github" size={50} color="black" />
+                   </TouchableOpacity>
+                    {/* <WebView                     
+                    source={{uri:url}}
+                    style={{marginTop:20}}
+                    />*/}
+                   </View> 
+                  
             </View>
 
             <View style={styles.containeLogin}>

@@ -7,11 +7,9 @@ import {  View,
     ScrollView,
      } from 'react-native';
 import styles from '../Style/styles';
-import { FontAwesome } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
-import { SimpleLineIcons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
+import { AntDesign ,Fontisto,FontAwesome5,FontAwesome} from '@expo/vector-icons';
+
+
 
 
 
@@ -20,7 +18,7 @@ import { Fontisto } from '@expo/vector-icons';
 export default function Home({navigation}) {
 
 
-    const Acessar=() =>{
+    const Acessar = () =>{
         navigation.goBack('Login');
         }
 
@@ -79,7 +77,7 @@ export default function Home({navigation}) {
                    
 
                      
-                    <ScrollView>
+                    
                     <View style={styles.post}>
                         <View style={styles.postHeader}>
                             <View >
@@ -91,7 +89,7 @@ export default function Home({navigation}) {
                                 <TouchableOpacity
                                 onPress={Acessar}
                                 >
-                                <SimpleLineIcons name="options-vertical" size={24} color="black" />
+                                <AntDesign name="back" size={24} color="black" />
                                 </TouchableOpacity>
                     
                             </View>
@@ -138,7 +136,7 @@ export default function Home({navigation}) {
                         </View>
 
                     </View>        
-                    </ScrollView>  
+                   
                    </View>
                 );
             }
