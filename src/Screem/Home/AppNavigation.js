@@ -9,12 +9,13 @@ import Home from './home';
 
 
 const screens={
+  
+  Login : {
+    screen:Login
+  },
   Home: {
     screen:Home
   },
-  Login : {
-    screen:Login
-  }
 }
 
 const AppNavigation = createStackNavigator(screens);

@@ -8,21 +8,21 @@ import { NavigationContainer  } from '@react-navigation/native';
 import Appnavigation from './src/Screem/Home/AppNavigation';
 
 
-export default function App() {
-  return (
-    
-      <Login/>
-     
- 
-  );
-}
-
 // export default function App() {
 //   return (
-//     <NavigationContainer>
-      
-//        <Appnavigation/>
-      
-//     </NavigationContainer>
+    
+//       <Login/>
+     
+ 
 //   );
 // }
+
+export default function App() {
+  return (
+  
+      
+       <Appnavigation/>
+      
+    
+  );
+}

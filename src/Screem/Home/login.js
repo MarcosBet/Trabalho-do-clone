@@ -5,7 +5,7 @@ import { Entypo } from '@expo/vector-icons';
 import Home from './home';
 
 
-export default function Login(){
+export default function Instagram({ navigation}){
     const Acessar=() =>{
         navigation.navigate('Home');
         }
@@ -19,7 +19,7 @@ export default function Login(){
                 <View>
                    
                  <TouchableOpacity
-                 onPress={(Acessar)}
+                
                  >
                   <Entypo name="instagram" size={40} color="black" />
                  </TouchableOpacity>
@@ -45,7 +45,11 @@ export default function Login(){
                     onChange={()=>{uri:"h"}}
                 />
 
-                <TouchableOpacity style={styles.btnLogin}>
+                <TouchableOpacity 
+                style={styles.btnLogin}
+                onPress={(Acessar)}
+                
+                >
                     
                     <Text style={styles.btnLoginText}>Acessar</Text>
                 </TouchableOpacity>

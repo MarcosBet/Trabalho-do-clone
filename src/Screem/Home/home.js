@@ -17,7 +17,13 @@ import { Fontisto } from '@expo/vector-icons';
 
 
 
-export default function Home() {
+export default function Home({navigation}) {
+
+
+    const Acessar=() =>{
+        navigation.goBack('Login');
+        }
+
 
     const post = [
 
@@ -82,7 +88,9 @@ export default function Home() {
                             </View>
 
                             <View >
-                                <TouchableOpacity>
+                                <TouchableOpacity
+                                onPress={Acessar}
+                                >
                                 <SimpleLineIcons name="options-vertical" size={24} color="black" />
                                 </TouchableOpacity>
                     
