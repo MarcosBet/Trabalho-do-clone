@@ -16,6 +16,7 @@ const screens={
   Home: {
     screen:Home
   },
+  
 }
 
 const AppNavigation = createStackNavigator(screens);

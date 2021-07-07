@@ -4,7 +4,7 @@ import styles from '../Style/styles';
 import { Entypo ,AntDesign} from '@expo/vector-icons';
 import Home from './home';
 //import { WebView } from 'react-native-webview';
-
+import Fundo from '../../../assets/fundo.png';
 
 
 export default function Login({ navigation}){
@@ -18,7 +18,10 @@ export default function Login({ navigation}){
 
         <KeyboardAvoidingView  style={styles.bacgroungLogin}>
 
-            <View style={styles.containerLogo}>
+           
+            <View style={styles.containerLogo
+            
+            }>
                 <View>
                    
                  <TouchableOpacity>
@@ -54,8 +57,8 @@ export default function Login({ navigation}){
                  style={styles.inputLogo}
                     placeholder="Senha "
                     autoCorrect={false}
-                    secureTextEntry
-                    onChange={()=>{uri:"h"}}
+                    secureTextEntry={true}
+                    onChange={()=>{}}
                 />
 
                 <TouchableOpacity 
@@ -67,7 +70,7 @@ export default function Login({ navigation}){
                     <Text style={styles.btnLoginText}>Acessar</Text>
                 </TouchableOpacity>
             </View>
-
+           
         </KeyboardAvoidingView>
 
     );

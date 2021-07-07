@@ -8,7 +8,7 @@ import {  View,
      } from 'react-native';
 import styles from '../Style/styles';
 import { AntDesign ,Fontisto,FontAwesome5,FontAwesome} from '@expo/vector-icons';
-
+import Login from './login';
 
 
 
@@ -73,11 +73,6 @@ export default function Home({navigation}) {
 
                     <View>
 
-                        
-                   
-
-                     
-                    
                     <View style={styles.post}>
                         <View style={styles.postHeader}>
                             <View >

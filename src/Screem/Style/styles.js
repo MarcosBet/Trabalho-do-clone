@@ -18,6 +18,7 @@ postHeader:
     paddingHorizontal:15,
     alignItems:'center',
     marginBottom:15,
+ 
 },
 author:
 {
