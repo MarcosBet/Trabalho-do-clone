@@ -6,7 +6,11 @@ import Home from './home';
 
 
 export default function Login(){
-    const msg=()=> Alert.alert('MSG','Bem Vindo ao instagram')
+    const Acessar=() =>{
+        navigation.navigate('Home');
+        }
+
+
     return (
 
         <KeyboardAvoidingView  style={styles.bacgroungLogin}>
@@ -15,7 +19,7 @@ export default function Login(){
                 <View>
                    
                  <TouchableOpacity
-                 onPress={<Home/>}
+                 onPress={(Acessar)}
                  >
                   <Entypo name="instagram" size={40} color="black" />
                  </TouchableOpacity>
